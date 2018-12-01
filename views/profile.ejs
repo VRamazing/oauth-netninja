@@ -4,8 +4,6 @@
 		<meta charset = "utf-8">
 		<title>Simple Oauth</title>
 		<style>
-            
-
             body{
                 font-family: arial;
                 margin: 0;
@@ -38,33 +36,25 @@
                 padding: 0 10px;
                 color: #333;
             }
-            .google-btn{
-                color: #fff;
-                text-decoration: none;
-                font-size: 18px;
-                padding: 10px;
-                background: #ff5353;
-            }
         </style>
 	</head>
 	<body>
 		<nav>
 			<ul>
+				<li><a href="/">Homepage</a></li>
 				<% if(user){%>
                     <li><a href="/auth/logout">Logout</a></li>
                 <% }else{ %>
                     <li><a href="/auth/login">Login</a></li>
                 <% } %>
-                <li><a href="/">Homepage</a></li>
 			</ul>
 		</nav>
 		<header>
-			<h1>Login using...</h1>
+			<h1>Welcome to your profile</h1>
+			<h2><%= user.username %></h2>
 		</header>
 		<main>
-            <a class="google-btn" href="/auth/google">
-                Google+
-            </a>
+			<p>Blah Blah and Blah</p>
 		</main>
 	</body>
 </html>

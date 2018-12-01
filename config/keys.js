@@ -5,6 +5,9 @@ module.exports = {
 	},
 	mongodb: {
 		dbURI: 'mongodb://admin-vr:cr3at0r@ds117834.mlab.com:17834/oauth-test'
-	}
+	},
+  session: {
+    cookieKey: 'http://www.vigneshramesh.in'
+  }
 
 }
